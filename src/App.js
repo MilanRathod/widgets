@@ -1,7 +1,7 @@
 import React from "react";
-import Accordion from "./Accordion";
-import Search from "./Search";
-import Dropdown from "./Dropdown";
+import Accordion from "./components/Accordion";
+import Search from "./components/Search";
+import Dropdown from "./components/Dropdown";
 
 const items = [
   {
@@ -18,11 +18,26 @@ const items = [
   },
 ];
 
+const options = [
+  {
+    label: "The color Red",
+    value: "red",
+  },
+  {
+    label: "The color Green",
+    value: "green",
+  },
+  {
+    label: "A shade of Blue",
+    value: "blue",
+  },
+];
+
 export default () => {
   return (
     <div>
       <br />
-      <Dropdown/>
+      <Dropdown options={options}/>
     </div>
   );
 };
